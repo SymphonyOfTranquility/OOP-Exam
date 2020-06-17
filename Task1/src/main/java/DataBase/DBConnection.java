@@ -12,14 +12,7 @@ public class DBConnection {
             String passwd = "qwe";
             currentConnection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/weather",
                     login, passwd);
-/*
-            String sql = "SELECT EXISTS ( " +
-                    "SELECT FROM information_schema.tables " +
-                    "WHERE  table_schema = 'schema_name' " +
-                    "AND    table_name   = 'table_name' );";
-            Statement statement = currentConnection.createStatement();
-            ResultSet curSet = statement.executeQuery(sql);
-*/
+
             return true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
