@@ -3,12 +3,12 @@ package Entity;
 public class Inhabitants {
     private int id;
     private String name;
-    private String languageName;
+    private String language;
 
-    public Inhabitants(int id, String name, String languageName) {
+    public Inhabitants(int id, String name, String language) {
         this.id = id;
         this.name = name;
-        this.languageName = languageName;
+        this.language = language;
     }
 
     public int getId() {
@@ -27,11 +27,11 @@ public class Inhabitants {
         this.name = name;
     }
 
-    public String getLanguageName() {
-        return languageName;
+    public String getLanguage() {
+        return language;
     }
 
-    public void setLanguageName(String languageName) {
-        this.languageName = languageName;
+    public void setLanguage(String language) {
+        this.language = language;
     }
 }
